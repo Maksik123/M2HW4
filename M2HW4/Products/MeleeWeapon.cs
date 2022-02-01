@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace M2HW4.Products
 {
-    public class ShoppingCart
+    public abstract class MeleeWeapon : Weapon
     {
-        public Product[] UserShoppingCart { get; set; }
-
-        public int Counter { get; set; }
     }
 }

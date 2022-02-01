@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace M2HW4.Interfaces
 {
-    public interface IShowCatalogue
+    public interface IWeapon : IShowInfo
     {
-        void ShowCatalogue();
+        public int Damage { get; }
+
+        public void Attack();
+
+        public void ShowInfo();
     }
 }

@@ -3,23 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using M2HW4.Services;
+using M2HW4.Products;
 
 namespace M2HW4
 {
     public class Starter
     {
-    CatalogueService catalogueService = new CatalogueService();
-    ShoppingCartService shoppingCartService = new ShoppingCartService();
-    OrderService orderService = new OrderService();
+        Weapon[] inventory = { new Gun(), new MachineGun(), new Sword() };
+        Player player = new Player();
 
-    public void Run()
+        public void Run()
         {
-            catalogueService.ShowCatalogue();
-            string userText = Console.ReadLine();
-            shoppingCartService.AddToShoppingCart(userText);
-            orderService.Order();
+            foreach (var item in inventory)
+            {
+                player.Attack(item);
+                player.ShowInfo(item);
+                if (item is RangeWeapon)
+                {
+                    player.Reload(item);
+                }
 
+                if (item is MeleeWeapon)
+                {
+
+                }
+            }
         }
     }
 }

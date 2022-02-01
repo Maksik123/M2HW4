@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace M2HW4.Interfaces
 {
-    public interface IOrder
+    public interface IShowInfo
     {
-        Products.Product[] Order();
+        public void ShowInfo();
     }
 }
