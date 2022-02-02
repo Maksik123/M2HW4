@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace M2HW4.Interfaces
 {
-    public interface IWeapon : IShowInfo
+    public interface IWeapon
     {
         public int Damage { get; }
 

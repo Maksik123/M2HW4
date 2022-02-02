@@ -16,16 +16,16 @@ namespace M2HW4
         {
             foreach (var item in inventory)
             {
-                player.Attack(item);
-                player.ShowInfo(item);
                 if (item is RangeWeapon)
                 {
-                    player.Reload(item);
+                    player.Attack(item);
+                    player.ShowInfo(item);
+                    player.Reload(item as RangeWeapon);
                 }
 
                 if (item is MeleeWeapon)
                 {
-
+                    player.Attack(item as MeleeWeapon);
                 }
             }
         }
