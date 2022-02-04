@@ -14,11 +14,6 @@ namespace M2HW4.Products
             weapon.Attack();
         }
 
-        public void ShowInfo(IWeapon weapon)
-        {
-            weapon.ShowInfo();
-        }
-
         public void Reload(RangeWeapon rangeWeapon)
         {
             rangeWeapon.Reload();

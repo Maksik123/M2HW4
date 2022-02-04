@@ -8,6 +8,6 @@ namespace M2HW4.Interfaces
 {
     public interface IShowInfo
     {
-        public void ShowInfo();
+        public void ShowInfo(IWeapon weapon);
     }
 }

@@ -1,9 +1,10 @@
 ﻿using M2HW4;
+using M2HW4.DI;
 public class Program
 {
     public static void Main()
     {
-        Starter starter = new Starter();
-        starter.Run();
+        AutoFac autoFac = new AutoFac();
+        autoFac.Application_Start();
     }
 }

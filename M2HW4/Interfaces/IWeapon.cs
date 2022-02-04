@@ -11,7 +11,5 @@ namespace M2HW4.Interfaces
         public int Damage { get; }
 
         public void Attack();
-
-        public void ShowInfo();
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using M2HW4.Extensions;
+using M2HW4.Interfaces;
 
 namespace M2HW4.Products
 {
@@ -29,14 +30,7 @@ namespace M2HW4.Products
             else
             {
                 Console.WriteLine($"{GetType().Name} дзыньк");
-                ShowInfo();
             }
         }
-
-        public override void ShowInfo()
-        {
-            Console.WriteLine($"Вы нанесли {Damage} урона");
-        }
-
     }
 }

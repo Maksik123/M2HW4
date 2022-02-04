@@ -13,6 +13,5 @@ namespace M2HW4.Products
 
         public abstract void Attack();
 
-        public abstract void ShowInfo();
     }
 }

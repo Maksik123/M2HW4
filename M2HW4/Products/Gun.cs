@@ -7,7 +7,7 @@ using M2HW4.Interfaces;
 
 namespace M2HW4.Products
 {
-    public class Gun : RangeWeapon , IShowInfo
+    public class Gun : RangeWeapon
     {
         public override int Damage => 5;
 
@@ -21,9 +21,5 @@ namespace M2HW4.Products
             Console.WriteLine("Перезаряжаю");
         }
 
-        public override void ShowInfo()
-        {
-            Console.WriteLine($"Вы нанесли {Damage} урона");
-        }
     }
 }

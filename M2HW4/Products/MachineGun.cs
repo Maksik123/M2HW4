@@ -20,11 +20,5 @@ namespace M2HW4.Products
         {
             Console.WriteLine("Перезаряжаю");
         }
-
-        public override void ShowInfo()
-        {
-            Console.WriteLine($"Вы нанесли {Damage } урона");
-        }
-
     }
 }
