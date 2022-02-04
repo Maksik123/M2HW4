@@ -1,4 +1,5 @@
-﻿using M2HW4;
+﻿using Autofac;
+using M2HW4;
 using M2HW4.DI;
 public class Program
 {

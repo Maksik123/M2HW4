@@ -13,12 +13,12 @@ namespace M2HW4.Products
 
         public override void Attack()
         {
-            Console.WriteLine($"{GetType().Name}: бах!");
+            Console.WriteLine($"{GetType().Name}: Paf!");
         }
 
         public override void Reload()
         {
-            Console.WriteLine("Перезаряжаю");
+            Console.WriteLine("Reload");
         }
 
     }

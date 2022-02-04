@@ -15,12 +15,12 @@ namespace M2HW4.Services
             var item = weapon;
             if (item is RangeWeapon)
             {
-                Console.WriteLine($"Вы нанесли {item.Damage}");
+                Console.WriteLine($"You caused {item.Damage}");
             }
 
             if (item is MeleeWeapon)
             {
-                Console.WriteLine($"Вы нанесли {item.Damage}");
+                Console.WriteLine($"You caused {item.Damage}");
             }
         }
     }

@@ -24,12 +24,12 @@ namespace M2HW4.Products
         {
             if (CriticalChance < randomCrit.Next(100))
             {
-                string message = $"хыдыщ!\nВы нанесли {CriticalDamage} урона";
+                string message = $"Hidich!\nYou caused{CriticalDamage} damage";
                 message.WriteCriticalDamageLine();
             }
             else
             {
-                Console.WriteLine($"{GetType().Name} дзыньк");
+                Console.WriteLine($"{GetType().Name} Dzink");
             }
         }
     }
