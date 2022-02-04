@@ -6,6 +6,8 @@ public class Program
     public static void Main()
     {
         DependencyInjector dependencyInjector = new DependencyInjector();
-        dependencyInjector.DependencyInicialization().Resolve<Starter>().Run();
+        var container = dependencyInjector.DependencyInicialization();
+        var starter = container.Resolve<Starter>();
+        starter.Run();
     }
 }
