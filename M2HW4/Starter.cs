@@ -13,13 +13,13 @@ namespace M2HW4
     {
         Weapon[] inventory = { new Gun(), new MachineGun(), new Sword() };
         Player player = new Player();
+
         private readonly IShowInfo showInfo;
 
         public Starter(IShowInfo showInfo)
         {
             this.showInfo = showInfo;
         }
-
 
         public void Run()
         {

@@ -5,7 +5,7 @@ public class Program
 {
     public static void Main()
     {
-        AutoFac autoFac = new AutoFac();
-        autoFac.Application_Start();
+        DependencyInjector dependencyInjector = new DependencyInjector();
+        dependencyInjector.DependencyInicialization().Resolve<Starter>().Run();
     }
 }

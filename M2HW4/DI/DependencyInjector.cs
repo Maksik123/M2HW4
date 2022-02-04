@@ -11,26 +11,15 @@ using M2HW4.Services;
 
 namespace M2HW4.DI
 {
-    public class AutoFac
+    public class DependencyInjector
     {
-        IContainer _container;
-
-        public void Application_Start()
+        public IContainer DependencyInicialization()
         {
             var builder = new ContainerBuilder();
             builder.RegisterType<NotificationService>().As<IShowInfo>();
             builder.RegisterType<Starter>();
             var config = builder.Build();
-            Builder().Resolve<Starter>().Run();
-            config.Resolve<Starter>().Run();
-        }
-
-        public IContainer Builder()
-        {
-            var builder = new ContainerBuilder();
-
-            _container = builder.Build();
-            return _container;
+            return config;
         }
     }
 }
